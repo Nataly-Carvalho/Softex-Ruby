@@ -14,26 +14,26 @@ loop do
     case op
     when 1
         puts "-----------------SOMA------------------"
-        n1 = valida_numero("Digite o primeiro número:")
-        n2 = valida_numero("Digite o segundo número:")
+        n1 = valida_numero("Digite o primeiro número: ")
+        n2 = valida_numero("Digite o segundo número: ")
 
         soma(n1, n2)
     when 2 
         puts "-----------------SUBTRAÇÂO---------------"
-        n1 = valida_numero("Digite o primeiro número:")
-        n2 = valida_numero("Digite o segundo número:")
+        n1 = valida_numero("Digite o primeiro número: ")
+        n2 = valida_numero("Digite o segundo número: ")
 
         subtra(n1, n2)
     when 3
         puts "---------------DIVISÂO-------------------"
-        n1 = valida_numero("Digite o divisor:")
-        n2 = valida_numero("Digite o dividendo:")
+        n1 = valida_numero("Digite o divisor: ")
+        n2 = valida_numero("Digite o dividendo: ")
         
         divisao(n1, n2)
     when 4
         puts "--------------MULTIPLICAÇÂO----------------"
-        n1 = valida_numero("Digite o primeiro número:")
-        n2 = valida_numero("Digite o segundo número:")
+        n1 = valida_numero("Digite o primeiro número: ")
+        n2 = valida_numero("Digite o segundo número: ")
         multi(n1, n2)
     when 0
         puts " #{verde}Saindo...#{resetcor}"

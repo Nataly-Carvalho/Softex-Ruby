@@ -13,19 +13,26 @@ def limpaTela
     system("clear") || system("cls")
 end
 
-def valida_numero(prompt) 
+def numero_valido?(str)
+    # Tenta converter a string para float
+    !!Float(str) rescue false
+end
 
+def valida_numero(prompt)
     vermelho = "\e[31m"
     resetcor = "\e[0m"
 
-    print prompt 
-    begin
-        return gets.chomp.to_i 
-    rescue ArgumentError 
-    puts "#{vermelho}Por favor, insira um número válido.#{resetcor}" 
-        return valida_numero(prompt) 
+    print prompt
+    input = gets.chomp
+
+    if numero_valido?(input)
+        return input.to_f
+    else
+        puts "#{vermelho}Por favor, insira um número válido.#{resetcor}"
+        return valida_numero(prompt)
     end
 end
+
 
 def soma(numero1, numero2)
     soma = numero1 + numero2
