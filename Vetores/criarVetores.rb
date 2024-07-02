@@ -49,12 +49,6 @@ maiores_que_3 = vetor.select { |elemento| elemento > 3 }  # Seleciona elementos 
 puts "Elementos maiores que 3: #{maiores_que_3}"  # Imprime os elementos que são maiores que 3
 continuar
 
-# Transformar elementos
-puts "-------- Transformar Elementos --------"  # Imprime título da seção
-quadrados = vetor.map { |elemento| elemento ** 2 }  # Cria um novo vetor com os quadrados dos elementos do vetor original
-puts "Quadrados dos elementos: #{quadrados}"  # Imprime o vetor com os quadrados dos elementos
-continuar
-
 # Vetor misto
 puts "-------- Vetor Misto --------"  # Imprime título da seção
 vetor_misto = [1, "dois", 3.0, :quatro, [5, 6], { chave: "valor" }, true]  # Cria um vetor com elementos de diferentes tipos
