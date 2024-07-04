@@ -35,7 +35,7 @@ loop do
         n1 = valida_numero("Digite o primeiro número: ")
         n2 = valida_numero("Digite o segundo número: ")
         multi(n1, n2)
-    when 0
+    when 5
         puts " #{verde}Saindo...#{resetcor}"
         break
     else 
